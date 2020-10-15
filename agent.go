@@ -114,8 +114,6 @@ func configure_as_server(config configparser.Config) {
 			}
 		} else if err != nil {
 			log.Println("An error occured preventing a refresh of the configuration.")
-		} else {
-			log.Println("No change to configuration detected.")
 		}
 		time.Sleep(time.Duration(server.Refresh_time) * time.Second)
 	}
